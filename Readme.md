@@ -440,7 +440,7 @@ This project is licensed under the MIT License.
 
 **Anik Shahrier** — [mdanikshahrier@gmail.com]
 
-Project Link: [https://github.com/AnikShahrier/password-strength-analyzer](https://github.com/YOUR_USERNAME/password-strength-analyzer)
+Project Link: [https://github.com/AnikShahrier/password-strength-analyzer](https://github.com/AnikShahrier/password-strength-analyzer)
 
 ---
 
