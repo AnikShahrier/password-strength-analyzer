@@ -1,149 +1,6 @@
-Here are all the files you need to copy and paste:
-
----
-
-## 1. Client .gitignore
-
-**File: `client/.gitignore`**
-
-```gitignore
-# Logs
-logs
-*.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log*
-lerna-debug.log*
-
-# Dependencies
-node_modules
-.pnp
-.pnp.js
-
-# Build output
-dist
-dist-ssr
-*.local
-
-# Editor directories and files
-.vscode/*
-!.vscode/extensions.json
-.idea
-.DS_Store
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
-
-# Environment variables
-.env
-.env.local
-.env.*.local
-
-# Testing
-coverage
-
-# Cache
-.cache
-.parcel-cache
-```
-
----
-
-## 2. Server .gitignore
-
-**File: `server/.gitignore`**
-
-```gitignore
-# Dependencies
-node_modules
-
-# Environment variables
-.env
-
-# Logs
-logs
-*.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-
-# Testing
-coverage
-
-# Misc
-.DS_Store
-*.pem
-
-# Debug
-.pnpm-debug.log*
-
-# Local env files
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
-```
-
----
-
-## 3. Root .gitignore
-
-**File: `.gitignore`** (in project root)
-
-```gitignore
-# Dependencies
-node_modules/
-.pnp
-.pnp.js
-
-# Environment variables
-.env
-.env.local
-.env.*.local
-
-# Build outputs
-dist/
-build/
-coverage/
-
-# Logs
-logs/
-*.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-
-# Editor directories and files
-.vscode/*
-!.vscode/extensions.json
-.idea/
-.DS_Store
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
-
-# OS files
-Thumbs.db
-
-# Database
-*.dump
-```
-
----
-
-## 4. Complete README.md
-
-**File: `README.md`**
-
-```markdown
 # 🔐 Password Strength Analyzer
 
-A full-stack web application that analyzes password strength in real-time, generates strong passwords, and tracks analysis history. Built with the PERN stack (MySQL, Express, React, Node.js).
+A full-stack web application that analyzes password strength in real-time, generates strong passwords, and tracks analysis history. Built with the PERN stack (PostgreSQL → MySQL, Express, React, Node.js).
 
 ![React](https://img.shields.io/badge/React-18.2.0-61DAFB?logo=react)
 ![Node.js](https://img.shields.io/badge/Node.js-18+-339933?logo=node.js)
@@ -253,7 +110,7 @@ Before you begin, ensure you have the following installed:
 ### Step 1: Clone the Repository
 
 ```bash
-git clone https://github.com/AnikShahrier/password-strength-analyzer.git
+git clone https://github.com/YOUR_USERNAME/password-strength-analyzer.git
 cd password-strength-analyzer
 ```
 
@@ -321,7 +178,7 @@ Or from inside MySQL:
 
 ```sql
 USE password_analyzer;
-SOURCE C:/Users/YOUR_NAME/OneDrive/Desktop/PSA/database/schema.sql;
+SOURCE /path/to/your/project/database/schema.sql;
 ```
 
 ### Step 4: Verify Setup
@@ -581,9 +438,9 @@ This project is licensed under the MIT License.
 
 ## 👨‍💻 Author
 
-**Anik Shahrier Oishik** — [GitHub](https://github.com/AnikShahrier)
+**Your Name** — [@your_twitter](https://twitter.com/your_twitter)
 
-Project Link: [https://github.com/AnikShahrier/password-strength-analyzer](https://github.com/AnikShahrier/password-strength-analyzer)
+Project Link: [https://github.com/YOUR_USERNAME/password-strength-analyzer](https://github.com/YOUR_USERNAME/password-strength-analyzer)
 
 ---
 
@@ -595,53 +452,3 @@ Project Link: [https://github.com/AnikShahrier/password-strength-analyzer](https
 - [Express.js](https://expressjs.com/)
 - [MySQL](https://www.mysql.com/)
 - [Node.js](https://nodejs.org/)
-```
-
----
-
-## 5. .env.example Files
-
-**File: `server/.env.example`**
-
-```env
-NODE_ENV=development
-PORT=5000
-
-# MySQL Configuration
-DB_HOST=localhost
-DB_PORT=3306
-DB_NAME=password_analyzer
-DB_USER=root
-DB_PASSWORD=your_mysql_password
-
-# Frontend URL (for CORS)
-CLIENT_URL=http://localhost:5173
-```
-
-**File: `client/.env.example`**
-
-```env
-VITE_API_URL=http://localhost:5000/api
-```
-
----
-
-## Push to GitHub
-
-```bash
-cd FolderName
-
-# Add all files
-git add .
-
-# Commit
-git commit -m "Initial commit: Password Strength Analyzer with MySQL"
-
-# Add remote (replace YOUR_USERNAME)
-git remote add origin https://github.com/YOUR_USERNAME/password-strength-analyzer.git
-
-# Push
-git branch -M main
-git push -u origin main
-```
-
